@@ -59,6 +59,7 @@ defmodule LiveStudy.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
       {:number, "~> 1.0"},
+      {:timex, "~> 3.7"}
     ]
   end
 
