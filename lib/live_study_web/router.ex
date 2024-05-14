@@ -26,6 +26,7 @@ defmodule LiveStudyWeb.Router do
     live "/boats", BoatLive
     live "/servers", ServerLive
     live "/donations", DonationLive
+    live "/volunteers", VolunteerLive
   end
 
   # Other scopes may use custom stacks.
