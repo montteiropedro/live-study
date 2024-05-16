@@ -40,6 +40,7 @@ defmodule LiveStudyWeb.Router do
     live "/servers", ServerLive
     live "/donations", DonationLive
     live "/volunteers", VolunteerLive
+    live "/shop", ShopLive
   end
 
   ## Authentication routes
