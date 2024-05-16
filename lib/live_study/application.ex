@@ -12,6 +12,7 @@ defmodule LiveStudy.Application do
       LiveStudy.Repo,
       {DNSCluster, query: Application.get_env(:live_study, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: LiveStudy.PubSub},
+      LiveStudyWeb.Presence,
       # Start the Finch HTTP client for sending emails
       {Finch, name: LiveStudy.Finch},
       # Start a worker by calling: LiveStudy.Worker.start_link(arg)

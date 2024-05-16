@@ -23,6 +23,7 @@ defmodule LiveStudyWeb.Router do
     live_session :authenticated,
       on_mount: {LiveStudyWeb.UserAuth, :ensure_authenticated} do
       live "/topsecret", TopSecretLive
+      live "/presence", PresenceLive
     end
   end
 
