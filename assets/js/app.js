@@ -23,6 +23,7 @@ import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 
 import flatpickr from "../vendor/flatpickr"
+import Uploaders from "./uploaders"
 
 let Hooks = {}
 
@@ -55,7 +56,8 @@ let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
   params: {_csrf_token: csrfToken},
-  hooks: Hooks
+  hooks: Hooks,
+  uploaders: Uploaders
 })
 
 // Show progress bar on live navigation and form submits
